@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 
 export default function Main() {
   const [meme, setMeme] = useState({
-    topText: "One does not simply",
-    bottomText: "Walk into Mordor",
-    imageUrl: "http://i.imgflip.com/1bij.jpg",
+    topText: "Me trying to be healthy",
+    bottomText: "Also me ordering pizza at midnight",
+    imageUrl: "https://i.imgflip.com/3eqjd8.jpg",
   });
   const [allMemes, setAllMemes] = useState([]);
 
@@ -38,7 +38,7 @@ export default function Main() {
           Top Text
           <input
             type="text"
-            placeholder="One does not simply"
+            placeholder="Me trying to be healthy"
             name="topText"
             onChange={handleChange}
             value={meme.topText}
@@ -49,7 +49,7 @@ export default function Main() {
           Bottom Text
           <input
             type="text"
-            placeholder="Walk into Mordor"
+            placeholder="Also me ordering pizza at midnight"
             name="bottomText"
             onChange={handleChange}
             value={meme.bottomText}
